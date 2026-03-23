@@ -1,0 +1,24 @@
+/* Base text color for the page */
+body {
+  color: #161616;
+}
+
+/* Links color */
+a {
+  color: #161616;
+}
+
+/* Hide visually hidden elements */
+.visually-hidden {
+  display: none;
+}
+
+/* Card category text color */
+.card-category {
+  color: #D73953;
+}
+
+/* Section tagline text color */
+.section-tagline {
+  color: #D73953;
+}
