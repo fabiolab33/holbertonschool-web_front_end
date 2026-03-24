@@ -45,23 +45,23 @@ body {
 }
 
 /* Links (only with href) */
-a[href] {
+a {
   color: var(--text-color);
   text-decoration: none;
 }
 
 /* Visited links */
-a[href]:visited {
+a:visited {
   font-style: italic;
 }
 
 /* Hover state */
-a[href]:hover {
+a:hover {
   text-decoration: underline;
 }
 
 /* Active state */
-a[href]:active {
+a:active {
   background-color: var(--color-light-grey);
 }
 
