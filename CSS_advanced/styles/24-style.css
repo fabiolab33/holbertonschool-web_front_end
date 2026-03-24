@@ -21,6 +21,16 @@
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 3rem 0;
     --nav-item-link-hover: var(--color-primary);
+
+    --button-display: inline-block;
+    --button-padding: 1.5rem 3rem;
+    --button-border: 0.2rem solid var(--color-primary);
+    --button-color: var(--color-black);
+    --button-text-decoration: none;
+    --button-font-size: var(--font-size-large);
+    --button-hover-color: var(--color-white);
+    --button-hover-text-decoration: none;
+    --button-hover-background: var(--color-primary);
 }
 *, *::before, *::after {
   box-sizing: border-box;
@@ -30,6 +40,14 @@
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
+}
+
+/* Data section theme */
+[data-section-theme="dark"] {
+  --text-color: var(--color-white);
+  --section-title-color: var(--color-white);
+  background-color: var(--color-black);
+  --button-color: var(--color-white);
 }
 
 /* Sections
@@ -150,13 +168,6 @@ summary {
   --section-title-color: var(--color-black);
 }
 
-/* Data section theme */
-[data-section-theme="dark"] {
-  --text-color: var(--color-white);
-  --section-title-color: var(--color-white);
-  background-color: var(--color-black);
-}
-
 /* Base font size scaling */
 html {
   font-size: 62.5%;
@@ -187,6 +198,21 @@ a:hover {
 
 a:active {
   background-color: var(--color-light-grey);
+}
+
+.button {
+  display: var(--button-display);
+  padding: var(--button-padding);
+  border: var(--button-border);
+  font-size: var(--button-font-size);
+  color: var(--button-color);
+  text-decoration: var(--button-text-decoration);
+}
+
+.button:hover {
+  color: var(--button-hover-color);
+  text-decoration: var(--button-hover-text-decoration);
+  background-color: var(--button-hover-background);
 }
 
 /* Hidden elements */
